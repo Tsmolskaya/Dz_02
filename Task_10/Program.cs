@@ -7,4 +7,8 @@
 
 Console.WriteLine("введите число от 100 до 999 ");
 int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine((num % 100) / 10);
+Console.WriteLine(Tenth(num));
+int Tenth(int number)
+{
+    return(number % 100) / 10;
+}
